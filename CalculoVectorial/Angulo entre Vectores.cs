@@ -27,12 +27,15 @@ namespace CalculoVectorial
 			int Valor_bj = Convert.ToInt32(bj.Text);
 			int Valor_bk = Convert.ToInt32(bk.Text);
 
+			int Producto_punto = ((Valor_ai * Valor_bi) + (Valor_aj * Valor_bj) + (Valor_ak * Valor_bk));
+
 			double Magnitud_A = Math.Sqrt((Valor_ai) ^ 2 + (Valor_aj) ^ 2 + (Valor_ak) ^ 2);
 			double Magnitud_B = Math.Sqrt((Valor_bi) ^ 2 + (Valor_bj) ^ 2 + (Valor_bk) ^ 2);
 			double Producto_Magnitud = Magnitud_A * Magnitud_B;
-			Convert.ToInt32(Producto_Magnitud);
-			int Producto_punto = ((Valor_ai * Valor_bi) + (Valor_aj * Valor_bj) + (Valor_ak * Valor_bk));
+
 			double Division = Producto_punto / Producto_Magnitud;
+
+			tbxResultado.Text = Division.ToString();
 
 			//Investigar como obtener el angulo
 

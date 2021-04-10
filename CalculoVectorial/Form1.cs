@@ -32,10 +32,10 @@ namespace CalculoVectorial
 					Form magnitudvector = new MagnitudVector();
 					magnitudvector.Show();
 					break;
-				case "Vector Unitario":
+				/*case "Vector Unitario":
 					Form vector_unitario = new Vector_Unitario();
 					vector_unitario.Show();
-					break;
+					break;*/
 				case "Suma - Resta Vector":
 					Form suma_y_resta= new Suma_y_Resta();
 					suma_y_resta.Show();
